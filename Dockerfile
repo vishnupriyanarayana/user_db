@@ -5,7 +5,7 @@ FROM python:3.9
 WORKDIR /app
 
 # Copy the Flask application code into the container
-COPY requirements.txt
+
 COPY . .
 # Install any needed dependencies specified in requirements.txt
 RUN pip install -r requirements.txt
